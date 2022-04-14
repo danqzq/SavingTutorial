@@ -15,6 +15,10 @@ namespace Dan
         public static void SaveFloat(string key, float value) => PlayerPrefs.SetFloat(key, value);
         
         public static float LoadFloat(string key) => PlayerPrefs.GetFloat(key);
+        
+        public static void SaveString(string key, string value) => PlayerPrefs.SetString(key, value);
+        
+        public static string LoadString(string key) => PlayerPrefs.GetString(key);
 
         public static void Save(string key, object data)
         {
